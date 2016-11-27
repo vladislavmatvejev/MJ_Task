@@ -17,7 +17,7 @@ Classes in src/ folder:</br>
         *routes.php - Class with routes</br>
 
 
-MySQL Table:
+MySQL Table:</br>
         CREATE TABLE IF NOT EXISTS `customers` (
           `id` int(11) NOT NULL AUTO_INCREMENT,
           `customer_name` varchar(256) DEFAULT NULL,
