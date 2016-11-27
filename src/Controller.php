@@ -43,7 +43,6 @@ class Controller
         foreach($result as $key=>$value){
             $result[$key]['mobile_number'] = $this->showNumber($this->encryption->decrypt($value['mobile_number']));
         }
-        //$result[0]['mobile_number'] = $this->showNumber($this->encryption->decrypt($result[0]['mobile_number']));
         return json_encode($result);
     }
     function showNumber($number, $maskingCharacter = '*') {
