@@ -2,19 +2,19 @@
 # MJ_TEST task
 
 Routes for using:</br>
-        For retrieving customers data: /api/{type}/{value} - Where {type} is field by which we look in SQL in WHERE clause and {value} is the value of this field
-        For adding new customer: /api/add
-                Fields for adding: 'customer_name', 'email', 'mobile_number', 'age', 'address', 'city', 'zip_code', 'something_1', 'something_2'
-                Email field is unique.
+        For retrieving customers data: /api/{type}/{value} - Where {type} is field by which we look in SQL in WHERE clause and {value} is the value of this field</br>
+        For adding new customer: /api/add</br>
+                Fields for adding: 'customer_name', 'email', 'mobile_number', 'age', 'address', 'city', 'zip_code', 'something_1', 'something_2'</br>
+                Email field is unique.</br>
 
-Classes in src/ folder:
-        Customer.php   - Customer table model
-        Encryption.php - Encrypt\Decrypt phone numbers
-        Validation.php - Interface for Validation
-        CustomerValidatior.php - Class for validating email, phone number format and empty fields
-        DataLayer.php  - Functions for storing/retrieving data from database
-        Controller.php - Class with functions for adding/retrieving data
-        routes.php - Class with routes
+Classes in src/ folder:</br>
+        Customer.php   - Customer table model</br>
+        Encryption.php - Encrypt\Decrypt phone numbers</br>
+        Validation.php - Interface for Validation</br>
+        CustomerValidatior.php - Class for validating email, phone number format and empty fields</br>
+        DataLayer.php  - Functions for storing/retrieving data from database</br>
+        Controller.php - Class with functions for adding/retrieving data</br>
+        routes.php - Class with routes</br>
 
 
 MySQL Table:
@@ -33,6 +33,6 @@ MySQL Table:
           UNIQUE KEY `email` (`email`(100))
         ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6;
 
-
-        MySQL user setting in src/settings.php => 'pdo'
-        Default user 'root' without password. Host: localhost.
+</br>
+        MySQL user setting in src/settings.php => 'pdo'</br>
+        Default user 'root' without password. Host: localhost.</br>
