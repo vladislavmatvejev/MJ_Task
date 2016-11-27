@@ -1,7 +1,7 @@
 # Slim Framework 3 Skeleton Application
 # MJ_TEST task
 
-Routes for using:
+Routes for using:</br>
         For retrieving customers data: /api/{type}/{value} - Where {type} is field by which we look in SQL in WHERE clause and {value} is the value of this field
         For adding new customer: /api/add
                 Fields for adding: 'customer_name', 'email', 'mobile_number', 'age', 'address', 'city', 'zip_code', 'something_1', 'something_2'
