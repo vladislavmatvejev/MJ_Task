@@ -33,7 +33,7 @@ class Controller
             $rep->addCustomer($customer);
             return '{"customer": '. json_encode($data) .'}';
         }else{
-            echo '{"errors": ' . json_encode($validate->getErrors()) . '}';
+            return '{"errors": ' . json_encode($validate->getErrors()) . '}';
         }
     }
 
