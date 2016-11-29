@@ -17,7 +17,7 @@ class Controller
     }
 
     public function addCustomer($request, $response, $args){
-        $validate = new CustomerValidator();
+        $validate = new \CustomerValidator();
         $data = $request->getParsedBody();
         $customer = new \Customer($data);
         $rep = new \DataLayer($this->dbh);

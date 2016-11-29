@@ -38,6 +38,7 @@ class DataLayer
                 ->into('customers')
                 ->values($values);
             $sql->execute();
+            return true;
         } catch(PDOException $e) {
             return '{"error":{"text":'. $e->getMessage() .'}}';
         }
