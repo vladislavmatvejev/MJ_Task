@@ -6,7 +6,6 @@
  * Date: 27.11.2016
  * Time: 20:19
  */
-require __DIR__ . '/../src/Validator.php';
 
 
 class CustomerValidator extends Validator
@@ -45,6 +44,7 @@ class CustomerValidator extends Validator
     // check phone number format
     function validateNumber($number){
         $phoneUtil = \libphonenumber\PhoneNumberUtil::getInstance();
+
         try {
             $gbNumberProto = $phoneUtil->parse($number, "GB");
         } catch (\libphonenumber\NumberParseException $e) {

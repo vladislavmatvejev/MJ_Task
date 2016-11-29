@@ -6,6 +6,8 @@
  * Date: 27.11.2016
  * Time: 18:31
  */
+
+
 class Encryption
 {
     private $key = 'phone number to (en/de)crypt';

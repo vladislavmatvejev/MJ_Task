@@ -6,6 +6,8 @@
  * Date: 27.11.2016
  * Time: 19:30
  */
+
+
 class Customer
 {
     private $email;

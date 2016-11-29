@@ -6,6 +6,7 @@
  * Date: 27.11.2016
  * Time: 20:15
  */
+
 class Validator
 {
     private $errors;

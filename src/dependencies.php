@@ -32,5 +32,6 @@ $container['dbh'] = function($container) {
 };
 
 $container['\Controller'] = function($c) {
+    //return new \Controllers\Controller($c['dbh']);
     return new \Controller($c['dbh']);
 };
