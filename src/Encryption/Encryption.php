@@ -6,7 +6,7 @@
  * Date: 27.11.2016
  * Time: 18:31
  */
-
+namespace Encryption;
 
 class Encryption
 {

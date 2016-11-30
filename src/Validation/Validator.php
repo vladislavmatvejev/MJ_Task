@@ -6,6 +6,7 @@
  * Date: 27.11.2016
  * Time: 20:15
  */
+namespace Validation;
 
 class Validator
 {
@@ -19,7 +20,7 @@ class Validator
         if(empty($this->errors[$error])){
             $this->errors[$error] = array();
         }
-        $this->errors[$error][] = $error . ' ' . $msg;
+        $this->errors[$error] = $error . ' ' . $msg;
     }
 
     public function getErrors()

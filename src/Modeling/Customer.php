@@ -6,7 +6,7 @@
  * Date: 27.11.2016
  * Time: 19:30
  */
-
+namespace Modeling;
 
 class Customer
 {
@@ -20,7 +20,7 @@ class Customer
     private $something_1;
     private $something_2;
 
-    public function Customer($data = array())
+    public function __construct($data = array())
     {
         foreach ($data as $key => $value) {
             $this->$key = $value;

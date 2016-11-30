@@ -6,7 +6,7 @@
  * Date: 27.11.2016
  * Time: 20:19
  */
-
+namespace Validation;
 
 class CustomerValidator extends Validator
 {
@@ -14,7 +14,7 @@ class CustomerValidator extends Validator
         parent::__construct();
     }
 
-    public function isValid(Customer $model){
+    public function isValid(\Modeling\Customer $model){
         if(empty($model->getEmail())){
             $this->setError('Email', ' is required.');
         }

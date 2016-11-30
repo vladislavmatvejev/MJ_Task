@@ -6,7 +6,7 @@
  * Date: 27.11.2016
  * Time: 19:11
  */
-
+namespace Data;
 
 class DataLayer
 {
@@ -30,7 +30,7 @@ class DataLayer
         }
     }
 
-    public function addCustomer(Customer $model){
+    public function addCustomer(\Modeling\Customer $model){
         $fields = array('customer_name', 'email', 'mobile_number', 'age', 'address', 'city', 'zip_code', 'something_1', 'something_2');
         $values = array($model->getCustomerName(), $model->getEmail(), $model->getMobileNumber(), $model->getAge(), $model->getAddress(), $model->getCity(), $model->getZipCode(), $model->getSomething1(), $model->getSomething2());
         try {
