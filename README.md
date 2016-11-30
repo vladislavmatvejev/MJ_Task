@@ -8,12 +8,12 @@ Routes for using:</br>
                 Email field is unique.</br>
 
 Classes in src/ folder:</br>
-        *Customer.php   - Customer table model</br>
-        *Encryption.php - Encrypt\Decrypt phone numbers</br>
-        *Validation.php - Interface for Validation</br>
-        *CustomerValidatior.php - Class for validating email, phone number format and empty fields</br>
-        *DataLayer.php  - Functions for storing/retrieving data from database</br>
-        *Controller.php - Class with functions for adding/retrieving data</br>
+        *Modeling/Customer.php   - Customer table model</br>
+        *Encryption/Encryption.php - Encrypt\Decrypt phone numbers</br>
+        *Validation/Validation.php - Interface for Validation</br>
+        *Validation/CustomerValidatior.php - Class for validating email, phone number format and empty fields</br>
+        *Data/DataLayer.php  - Functions for storing/retrieving data from database</br>
+        *Controllers/Controller.php - Class with functions for adding/retrieving data</br>
         *routes.php - Class with routes</br>
 
 
