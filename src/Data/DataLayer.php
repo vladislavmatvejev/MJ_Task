@@ -26,7 +26,8 @@ class DataLayer
             $data = $stmt->fetchAll();
             return $data;
         } catch(PDOException $e) {
-            return '{"error":{"text":' . $e->getMessage() . '}}';
+            $result['error']['text'] = $e->getMessage();
+            return json_encode($result);
         }
     }
 
@@ -40,7 +41,8 @@ class DataLayer
             $sql->execute();
             return true;
         } catch(PDOException $e) {
-            return '{"error":{"text":'. $e->getMessage() .'}}';
+            $result['error']['text'] = $e->getMessage();
+            return json_encode($result);
         }
     }
 }

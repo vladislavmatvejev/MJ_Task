@@ -30,12 +30,8 @@ class Controller
             $result['customer'] = $data;
             return json_encode($result);
         }else{
-<<<<<<< HEAD:src/Controllers/Controller.php
             $result['errors'] = $validate->getErrors();
             return  json_encode($result);
-=======
-            return '{"errors": ' . json_encode($validate->getErrors()) . '}';
->>>>>>> origin/master:src/Controller.php
         }
     }
 
